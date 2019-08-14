@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drag List</title>
+<script src='drag.js'></script>
+</head>
+<body>
+<div>
+    <div>
+        <h2>simple</h2>
+        <div id='list1'></div>
+        <div id='list2'></div>
+    </div>
+
+    <div>
+        <h2>shared</h2>
+        <div id='list3'></div>
+        <div id='list4'></div>
+    </div>
+
+    <div>
+        <h2>clone</h2>
+        <div id='list5'></div>
+        <div id='list6'></div>
+    </div>
+        
+    
+</div>
+</body>
+</html>
+<script >
+    var data1=[
+        {
+            id:1,
+            name:'anderson'
+        },
+        {
+            id:2,
+            name:'benedict',
+        },
+        {
+            id:3,
+            name:'camila'
+        }
+    ]
+    var data2=[
+        {
+            id:4,
+            name:'daniel'
+        },
+        {
+            id:5,
+            name:'excellent',
+        },
+        {
+            id:6,
+            name:'fabulous'
+        },
+       {
+            id:7,
+            name:'giant'
+        },
+        {
+            id:8,
+            name:'huge',
+        },
+        {
+            id:9,
+            name:'irene'
+        }
+    ]
+    var data3=[
+        {
+            id:10,
+            name:'ant'
+        },
+        {
+            id:11,
+            name:'benedict',
+        },
+        {
+            id:12,
+            name:'camila'
+        },
+        {
+            id:13,
+            name:'dam'
+        }
+    ]
+    var data4=[
+        {
+            id:14,
+            name:'exe',
+        },
+        {
+            id:15,
+            name:'fat'
+        },
+       {
+            id:16,
+            name:'git'
+        },
+        {
+            id:17,
+            name:'hug',
+        },
+        {
+            id:18,
+            name:'ink'
+        }
+    ]
+
+    var data5=[
+        {
+            id:19,
+            name:'jack',
+        },
+        {
+            id:20,
+            name:'king'
+        },
+       {
+            id:21,
+            name:'Lamp'
+        },
+        {
+            id:22,
+            name:'mouse',
+        }
+    ]
+    var data6=[
+        {
+            id:23,
+            name:'noise'
+        },
+        {
+            id:24,
+            name:'orient'
+        }
+    ]
+
+   
+    var L1 = new DragList({
+        el:'#list1',
+        data:data1
+    })
+   
+    var L2 = new DragList({
+        el:'#list2',
+        data:data2
+    })
+    var L3 = new DragList({
+        el:'#list3',
+        data:data3,
+        type:'shared'
+    }) 
+    var L4 = new DragList({
+        el:'#list4',
+        data:data4,
+        type:'shared'
+    })
+
+    var L5 = new DragList({
+        el:'#list5',
+        data:data5,
+        type:'clone'
+    }) 
+    var L6 = new DragList({
+        el:'#list6',
+        data:data6,
+        type:'clone'
+    })
+</script>
